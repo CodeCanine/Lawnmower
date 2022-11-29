@@ -21,7 +21,7 @@ def basic_mowing(grid):
     # Check all the rows
     # print_grid(grid)
     # time.sleep(2)
-
+    os.system('cls')
     for row in range(0, len(grid), 1):
         # And columns
         # Asymmetry grid [0]
@@ -69,6 +69,7 @@ def basic_mowing(grid):
 def dfs_iter_mowing(grid):
     # Stack to be working from with (0,0) start (grid index) value (top left corner)
     # print_grid(grid)
+    os.system('cls')
     stack = [(0, 0)]
     # Empty set to be populated, to avoid cycles
     cut_grass = set()
@@ -116,6 +117,7 @@ def dfs_iter_mowing(grid):
 # then move back until it can find another grass patch.
 # If no grass can be found along the given path, go back to the first '0'
 def dfs_rec_mowing(grid):
+    os.system('cls')
     print_grid(grid)
     # Set to avoid going in loops
     # Declaring outside the helper method, to avoid t resetting with every call.
@@ -129,7 +131,7 @@ def dfs_rec_mowing(grid):
             # If helper function finds a patch count it (optional)
             if hunt_grass(grid, row, col, cut_grass) is True:
                 grass_patches += 1
-    print(f'\nGrass patch(es) removed: {grass_patches}')
+    print(f'Grass patch(es) removed: {grass_patches}')
 
 
 def hunt_grass(grid, row, col, cut_grass):

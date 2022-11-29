@@ -48,6 +48,7 @@ if __name__ == "__main__":
     print("Basic Linear Search:\n")
     print_grid(grid1)
     time.sleep(5)
+    os.system('cls')
     # print_grid(grid1)
     # print()
     basic_mowing(grid1)
@@ -57,7 +58,7 @@ if __name__ == "__main__":
     os.system('cls')
 
     grid2 = create_grid(5)
-    print("\nDepth First Search Iterative:\n")
+    print("Depth First Search Iterative:\n")
     print_grid(grid2)
     time.sleep(5)
     # print_grid(grid2)
@@ -69,7 +70,7 @@ if __name__ == "__main__":
     os.system('cls')
 
     grid3 = create_grid(5)
-    print("\nDepth First Search Recursive:\n")
+    print("Depth First Search Recursive:\n")
     print_grid(grid3)
     time.sleep(5)
     # print_grid(grid3)
