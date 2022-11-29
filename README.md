@@ -33,18 +33,19 @@ Create random numpy array (0s and 1s), to represent the layout (1 is grass 0 is 
 Traverse through all tiles, with different methods, and set the grass (1) to cut (0).
 
 **(Base Layout:)**
-![](Gif/first.gif)
+![first](https://user-images.githubusercontent.com/9075212/204565470-c635d2ee-f202-45cf-a23a-c18faaa06346.gif)
+
 
 **Chose Approaches:**
 
 **Linear Search:**
-![](Gif/second.gif)
+![second](https://user-images.githubusercontent.com/9075212/204565539-74021640-2b0a-46da-967e-623277b339f3.gif)
 
 **Depth First Search Iterative Approach:**
-![](Gif/third.gif)
+![third](https://user-images.githubusercontent.com/9075212/204565559-a44561dc-bd8c-4b92-9be0-ef2b6718581b.gif)
 
 **Depth First Search Recursive Approach:**
-![](Gif/fourth.gif)
+![fourth](https://user-images.githubusercontent.com/9075212/204565580-7e263a49-2fe7-4e30-a121-6502133eb4fa.gif)
 
 **Summary:**
 Perfect task to practice graph traversing algorithms, that can be presented in an interview environment.
