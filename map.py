@@ -17,6 +17,13 @@ import os
 # ----->
 # <-----
 # ----->
+
+class Map:
+    def __init__(self, n):
+        self.n = n
+        create_grid(n)
+
+
 def basic_mowing(grid):
     # Check all the rows
     # print_grid(grid)
@@ -186,4 +193,3 @@ def create_grid(n):
 def print_grid(grid):
     print(np.matrix(grid))
     time.sleep(0.1)
-
