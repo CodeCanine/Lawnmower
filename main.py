@@ -22,9 +22,6 @@
 #   6) Obstruction recognition
 # Visualization changes
 
-import os
-import time
-from methods import *
 
 from map import *
 
