@@ -24,6 +24,7 @@
 
 import os
 import time
+from methods import *
 
 from map import *
 
@@ -38,43 +39,44 @@ from map import *
 # ]
 
 if __name__ == "__main__":
+    grid1 = Map(5, 6)
     print("""\nLegend for below grid:
         1: Large grass
         0: Short grass
         L: Lawnmower\n""")
-    # time.sleep(5)
-
-    grid1 = create_grid(5)
-    print("Basic Linear Search:\n")
-    print_grid(grid1)
+    grid1.print_grid()
     time.sleep(5)
+
+    print("Basic Linear Search:\n")
+    grid1.print_grid()
+    # time.sleep(5)
     os.system('cls')
     # print_grid(grid1)
     # print()
-    basic_mowing(grid1)
+    grid1.basic_mowing()
     print("Result:\n")
-    print_grid(grid1)
+    grid1.print_grid()
     time.sleep(2)
     os.system('cls')
 
-    grid2 = create_grid(5)
+    grid2 = Map(5)
     print("Depth First Search Iterative:\n")
-    print_grid(grid2)
+    grid2.print_grid()
     time.sleep(5)
     # print_grid(grid2)
     print()
-    dfs_iter_mowing(grid2)
+    grid2.dfs_iter_mowing()
     print("Result:\n")
-    print_grid(grid2)
+    grid2.print_grid()
     time.sleep(2)
     os.system('cls')
 
-    grid3 = create_grid(5)
+    grid3 = Map(5)
     print("Depth First Search Recursive:\n")
-    print_grid(grid3)
+    grid3.print_grid()
     time.sleep(5)
     # print_grid(grid3)
-    dfs_rec_mowing(grid3)
+    grid3.dfs_rec_mowing()
     print("Result:\n")
-    print_grid(grid3)
+    grid3.print_grid()
     time.sleep(2)
